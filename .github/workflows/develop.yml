@@ -12,7 +12,7 @@ permissions:
 jobs:
   terraform:
     # usamos el archivo creado en el paso anterior
-    uses: token.actions.githubusercontent.com/.github/workflows/terraform.yml@main
+    uses: ./.github/workflows/terraform.yml
     with:
       # pasamos todas las variables que configuramos en el archivo terraform.yml
       environment: dev
